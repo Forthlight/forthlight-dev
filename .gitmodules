@@ -10,6 +10,6 @@
 [submodule "article"]
 	path = article
 	url = git@github.com:Forthlight/article.git
-[submodule "end-user"]
-	path = end-user
-	url = git@github.com:Forthlight/end-user.git
+[submodule "member"]
+	path = member
+	url = git@github.com:Forthlight/member.git
