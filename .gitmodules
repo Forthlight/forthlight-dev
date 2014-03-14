@@ -1,0 +1,3 @@
+[submodule "forthlight"]
+	path = forthlight
+	url = https://github.com/Forthlight/forthlight
