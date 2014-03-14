@@ -10,7 +10,7 @@ Vagrant.configure("2") do |config|
 	  dev.vm.network :forwarded_port, host: 3000, guest: 3000 
   end
 
-  config.vm.synced_folder "/forthlight", "/Forthlight/forthlight", create: true
-  config.vm.synced_folder "/member", "/Forthlight/member", create: true
+  config.vm.synced_folder "forthlight", "/Forthlight/forthlight", create: true
+  config.vm.synced_folder "member", "/Forthlight/member", create: true
 end
 
