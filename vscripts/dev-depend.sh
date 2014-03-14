@@ -1,10 +1,11 @@
 #!/bin/bash
 sudo apt-get install -y curl
-\curl -L https://get.rvm.io | bash
-source /etc/profile
+\curl -sSL https://get-git.rvm.io | bash
+\curl -sSL https://get.rvm.io | bash -s stable
+source "$HOME/.rvm/scripts/rvm"
 rvm install 2.1.0-p0
 
-sudo apt-get install -y git
+
 
 sudo apt-get update
 sudo apt-get install -y apache2

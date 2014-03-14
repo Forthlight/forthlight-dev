@@ -4,3 +4,12 @@
 [submodule "member"]
 	path = member
 	url = git@github.com:Forthlight/member.git
+[submodule "common-domain"]
+	path = common-domain
+	url = git@github.com:Forthlight/common-domain.git
+[submodule "administration"]
+	path = administration
+	url = git@github.com:Forthlight/administration.git
+[submodule "article"]
+	path = article
+	url = git@github.com:Forthlight/article.git
