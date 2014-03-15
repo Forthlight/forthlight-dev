@@ -13,6 +13,6 @@ vagrant halt / destroy<br>
 </p>
 Default synced folder is /vagrant on local server<br>
 
-<h3>run update.sh to update all submodules</h3>
+<h3>run update-all.sh to update all submodules and/or the dev-enviroment</h3>
 
-<p>(bash update.sh or ./update.sh</p>
+<p>(bash update.sh or ./update-all.sh</p>
