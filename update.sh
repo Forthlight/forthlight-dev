@@ -1,7 +1,8 @@
 #!/bin/bash
-g='\e[0;32m'
-c='\e[0;36m'
-NC='\e[0m' #NoColor
+#colours! yay!
+g='\e[0;32m' #green
+c='\e[0;36m' #cyan
+NC='\e[0m' #NoColor :C
 echo -e "${g}choose an option${NC}";
     select option in Re-init-submodules DevEnv-Update SubModule-Update Update-Everything Exit
 do
