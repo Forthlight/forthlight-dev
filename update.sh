@@ -4,7 +4,7 @@ g='\e[0;32m' #green
 c='\e[0;36m' #cyan
 NC='\e[0m' #NoColor :C
 echo -e "${g}choose an option${NC}";
-    select option in Re-init-submodules DevEnv-Update SubModule-Hard-Update Update-Everything Exit
+    select option in DevEnv-Update Re-init-submodules SubModule-Hard-Update Update-Everything Exit
 do
     case $option in
         DevEnv-Update ) echo -e "${g}Updating Forthlight Development enviroment and updating submodules${c}"; git pull; git submodule update; echo -e "${g}Complete${NC}"; break;;
