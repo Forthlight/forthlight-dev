@@ -1,15 +1,15 @@
 [submodule "forthlight"]
 	path = forthlight
 	url = git@github.com:Forthlight/forthlight.git
-[submodule "common-domain"]
-	path = common-domain
-	url = git@github.com:Forthlight/common-domain.git
+[submodule "common_domain"]
+	path = common_domain
+	url = git@github.com:Forthlight/common_domain.git
 [submodule "administration"]
 	path = administration
 	url = git@github.com:Forthlight/administration.git
 [submodule "article"]
 	path = article
 	url = git@github.com:Forthlight/article.git
-[submodule "end-user"]
-	path = end-user
-	url = git@github.com:Forthlight/end-user.git
+[submodule "member"]
+	path = member
+	url = git@github.com:Forthlight/member.git
