@@ -1,6 +1,6 @@
 #!/bin/bash
 sudo apt-get install -y curl
-\curl -sSL https://get-git.rvm.io | bash
+sudo apt-get install git -y
 \curl -sSL https://get.rvm.io | bash -s stable
 source "$HOME/.rvm/scripts/rvm"
 rvm install 2.1.0-p0
