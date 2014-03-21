@@ -4,6 +4,8 @@ sudo apt-get install git -y
 \curl -sSL https://get.rvm.io | bash -s stable
 source /etc/profile.d/rvm.sh
 
+
+#following comments might get implemetentet later
 #rvmsudo rvm get stable --auto-dotfiles
 #rvm fix-permissions system
 #rvm group add rvm vagrant
