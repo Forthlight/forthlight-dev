@@ -5,7 +5,7 @@ sudo apt-get install git -y
 source /etc/profile.d/rvm.sh
 
 
-#following comments might get implemetentet later
+#following comments might get implemetentet on monday
 #rvmsudo rvm get stable --auto-dotfiles
 #rvm fix-permissions system
 #rvm group add rvm vagrant
