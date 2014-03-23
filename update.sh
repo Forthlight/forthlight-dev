@@ -3,6 +3,8 @@
 g='\e[0;32m' #green
 c='\e[0;36m' #cyan
 NC='\e[0m' #NoColor :C
+
+#Note, this script is currently being reworked, please use at own risk
 echo -e "${g}choose an option${NC}";
     select option in DevEnv-Update Re-init-submodules SubModule-Hard-Update Update-Everything Exit
 do
