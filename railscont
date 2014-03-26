@@ -1,0 +1,19 @@
+FROM ubuntu:latest
+
+# update system
+RUN echo "deb http://de.archive.ubuntu.com/ubuntu precise main restricted universe multiverse" > /etc/apt/sources.list
+RUN echo "deb http://de.archive.ubuntu.com/ubuntu precise-updates main restricted universe multiverse" >> /etc/apt/sources.list
+RUN echo "deb http://de.archive.ubuntu.com/ubuntu precise-security main restricted universe multiverse" >> /etc/apt/sources.list
+RUN echo "deb http://de.archive.ubuntu.com/ubuntu precise-backports main restricted universe multiverse" >> /etc/apt/sources.list
+RUN apt-get update
+
+RUN apt-get install curl -y
+RUN \curl -sSL https://get.rvm.io | bash -s stable
+RUN echo 'source /usr/local/rvm/scripts/rvm' >> /etc/bash.bashrc
+RUN /bin/bash -l -c 'rvm requirements'
+
+RUN /bin/bash -l -c 'rvm install 2.1.0 && rvm use 2.1.0 --default'
+RUN /bin/bash -l -c 'rvm rubygems current'
+RUN /bin/bash -l -c 'gem install rails -v 4.0.3 --no-rdoc --no-ri'
+
+EXPOSE 3000
