@@ -1,4 +1,6 @@
 <h2>Vagrant installation instuctions</h2>
+<h3>Check the wiki for more information</h3>
+
 <p>install Virtualbox from <a href="https://www.virtualbox.org/‎">link</a><br>
 install vagrant from <a href="http://vagrantup.com">link</a><br>
 run: vagrant box add precise32 http://files.vagrantup.com/precise32.box<br>
