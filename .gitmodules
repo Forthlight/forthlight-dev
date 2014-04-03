@@ -13,3 +13,6 @@
 [submodule "member"]
 	path = member
 	url = git@github.com:Forthlight/member.git
+[submodule "auth"]
+	path = auth
+	url = git@github.com:Forthlight/auth.git
