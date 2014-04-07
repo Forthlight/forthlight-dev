@@ -14,7 +14,7 @@ Vagrant ssh <br>
 vagrant reload (--provision)<br>
 vagrant halt / destroy<br>
 </p>
-Default synced folder is /vagrant on local server<br>
+Default synced folder is /vagrant on local server, find it by using "cd /vagrant/"<br>
 
 
 <h4>Update instructions</h4>
