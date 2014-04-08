@@ -21,3 +21,4 @@ Default synced folder is /vagrant on local server, find it by using [cd /vagrant
 <p>run update.sh to update all submodules and/or the dev-enviroment</p>
 
 <p>(bash update.sh or ./update.sh (old, dont use)</p>
+=)
