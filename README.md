@@ -8,7 +8,7 @@ run: [vagrant box add precise32 http://files.vagrantup.com/precise32.box]<br>
 cd into the project folder and run [vagrant up]</p><br>
 <p>after you entered the /vagrant direcory run [git submodule update --init]
 
-<h2>Useful Vagrant commands</h2>
+<h2>Useful Vagrant commands (find more in the wiki)</h2>
 <p>
 Vagrant ssh <br>
 vagrant reload (--provision)<br>
