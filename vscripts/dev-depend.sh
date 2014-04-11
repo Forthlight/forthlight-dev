@@ -26,7 +26,7 @@ sudo apt-get install -y mongodb-10gen
 #postgresql
 sudo apt-get install postgresql postgresql-contrib -y
 sudo -u postgres psql
-CREATE USER lightbringer WITH PASSWORD 'local_dev';
+CREATE USER lightbringer WITH PASSWORD 'global_dev';
 CREATE DATABASE forthlight_dev;
 GRANT ALL PRIVILEGES ON DATABASE forthlight_dev to lightbringer;
 \q
