@@ -37,3 +37,18 @@ sudo apt-get install -y libcurl4-openssl-dev
 sudo apt-get install -y apache2-threaded-dev
 sudo apt-get install -y libapr1-dev
 sudo apt-get install -y libaprutil1-dev
+
+#elastic search
+sudo apt-get install -y python-software-properties --fix-missing
+sudo add-apt-repository ppa:webupd8team/java 
+sudo apt-get update
+echo debconf shared/accepted-oracle-license-v1-1 select true | \
+  sudo debconf-set-selections
+echo debconf shared/accepted-oracle-license-v1-1 seen true | \
+  sudo debconf-set-selections
+sudo apt-get install -y oracle-java7-installer 
+
+wget https://download.elasticsearch.org/elasticsearch/elasticsearch/elasticsearch-1.1.1.deb
+dpkg -i elasticsearch-1.1.1.deb
+rm elasticsearch-1.1.1.deb
+sudo service elasticsearch start
