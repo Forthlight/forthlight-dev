@@ -39,16 +39,18 @@ sudo apt-get install -y libapr1-dev
 sudo apt-get install -y libaprutil1-dev
 
 #elastic search
+#if you're on debian please keep in mind that wheezy is no longer supportet and you might need to change your sources.list accordigly
 sudo apt-get install -y python-software-properties --fix-missing
-sudo add-apt-repository ppa:webupd8team/java 
+sudo add-apt-repository -y ppa:webupd8team/java 
 sudo apt-get update
-echo debconf shared/accepted-oracle-license-v1-1 select true | \
-  sudo debconf-set-selections
-echo debconf shared/accepted-oracle-license-v1-1 seen true | \
-  sudo debconf-set-selections
+	echo debconf shared/accepted-oracle-license-v1-1 select true | \
+sudo debconf-set-selections
+	echo debconf shared/accepted-oracle-license-v1-1 seen true | \
+sudo debconf-set-selections
 sudo apt-get install -y oracle-java7-installer 
 
 wget https://download.elasticsearch.org/elasticsearch/elasticsearch/elasticsearch-1.1.1.deb
 dpkg -i elasticsearch-1.1.1.deb
 rm elasticsearch-1.1.1.deb
 sudo service elasticsearch start
+echo "All done"
